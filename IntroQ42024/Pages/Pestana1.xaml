@@ -2,11 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IntroQ42024.Pages.Pestana1"
-             Title="Pestana1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Bienvenido a .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="Pestaña 1">
+    <VerticalStackLayout Padding="30" Spacing="5">
+        <Label Text="Ingrese primer número:" />
+        <Entry x:Name="N1" Keyboard="Numeric" />
+
+        <Label Text="Ingrese segundo número" />
+        <Entry x:Name="N2" Keyboard="Numeric" />
+
+        <Label Text="Resultado" />
+        <Entry x:Name="Resultado" IsReadOnly="True" />
+
+        <Button x:Name="btnSumar" Text="Sumar" Background="Green" Clicked="btnSumar_Clicked" />
+        <Button x:Name="btnLimpiar" Text="Limpiar" Background="Red" Clicked="btnLimpiar_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

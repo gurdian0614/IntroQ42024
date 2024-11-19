@@ -4,15 +4,7 @@
              xmlns:local="clr-namespace:IntroQ42024.Pages"
              x:Class="IntroQ42024.MainPage">
     <local:Pestana1 />
-    <ContentPage Title="Pestaña 2">
-        <StackLayout>
-            <Label Text="Estoy en pestaña 2" />
-        </StackLayout>
-    </ContentPage>
-    <ContentPage Title="Pestaña 3">
-        <StackLayout>
-            <Label Text="Estoy en pestaña 3" />
-        </StackLayout>
-    </ContentPage>
+    <local:Pestana2 />
+    <local:Pestana3 />
 
 </TabbedPage>
